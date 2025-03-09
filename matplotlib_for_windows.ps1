@@ -1,12 +1,11 @@
-#!/bin/bash
 # Create a virtual environment for managing dependencies
-python3 -m venv venv
+python -m venv venv
 
-# Sourcing the virtual environment
-source venv/bin/activate
+# Activate the virtual environment
+.\venv\Scripts\Activate.ps1
 
 # Install dependencies
 pip install numpy matplotlib
 
 # Run code for matplotlib
-python main.py "$@"
+python main.py $args
